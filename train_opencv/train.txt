@@ -6,3 +6,9 @@
 4
 /work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg62.bmp
 4
+/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg841070937.bmp
+1
+/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg998586885.bmp
+7
+/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg261293595.bmp
+9

@@ -12,6 +12,8 @@
 7
 /work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg261293595.bmp
 9
+/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg984943658.bmp
+5
 /work/shintaogas/code/train_opencv/train_opencv/num/0/0_0.bmp 
 0 
 /work/shintaogas/code/train_opencv/train_opencv/num/0/0_1.bmp 
