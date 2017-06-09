@@ -1,4 +1,3 @@
-
 #include <opencv2/opencv.hpp>
 #include <fstream>
 #include <opencv2/core/core.hpp>
@@ -20,7 +19,7 @@ int main(int argc,char** argv)
     vector<int> img_catg;
     int nLine = 0;
     string buf;
-    ifstream svm_data( "/work/shintaogas/code/train_opencv/train_opencv/num/gas.txt" );//訓練樣本圖片的路徑都寫在這個txt文件中，使用bat批處理文件可以得到這個txt文件
+    ifstream svm_data( argv[1] );//訓練樣本圖片的路徑都寫在這個txt文件中，使用bat批處理文件可以得到這個txt文件
     unsigned long n;
     while( svm_data )//將訓練樣本文件依次讀取進來
     {
@@ -40,13 +39,13 @@ int main(int argc,char** argv)
     svm_data.close();//關閉文件
     CvMat *data_mat, *res_mat;
     int nImgNum = nLine / 2; //nImgNum是樣本數量，只有文本行數的一半，另一半是標籤
-    data_mat = cvCreateMat( nImgNum, 324, CV_32FC1 );  //第二個參數，即矩陣的列是由下面的descriptors的大小決定的，可以由descriptors.size()得到，且對於不同大小的輸入訓練圖片，這個值是不同的
+    data_mat = cvCreateMat( nImgNum, 1296, CV_32FC1 );  //第二個參數，即矩陣的列是由下面的descriptors的大小決定的，可以由descriptors.size()得到，且對於不同大小的輸入訓練圖片，這個值是不同的
     cvSetZero( data_mat );
     //類型矩陣,存儲每個樣本的類型標誌
     res_mat = cvCreateMat( nImgNum, 1, CV_32FC1 );
     cvSetZero( res_mat );
     IplImage* src;
-    IplImage* trainImg=cvCreateImage(cvSize(28,28),8,3);//需要分析的圖片，這裡默認設定圖片是28*28大小，所以上面定義了324，如果要更改圖片大小，可以先用debug查看一下descriptors是多少，然後設定好再運行
+    IplImage* trainImg=cvCreateImage(cvSize(48,48),8,3);//需要分析的圖片，這裡默認設定圖片是28*28大小，所以上面定義了324，如果要更改圖片大小，可以先用debug查看一下descriptors是多少，然後設定好再運行
     
     //處理HOG特徵
     for( string::size_type i = 0; i != img_path.size(); i++ )
@@ -61,7 +60,7 @@ int main(int argc,char** argv)
         cout<<" 處理： "<<img_path[i].c_str()<<endl;
         
         cvResize(src,trainImg);
-        HOGDescriptor *hog=new HOGDescriptor(cvSize(28,28),cvSize(14,14),cvSize(7,7),cvSize(7,7),9);
+        HOGDescriptor *hog=new HOGDescriptor(cvSize(48,48),cvSize(24,24),cvSize(12,12),cvSize(6,6),9);
         vector<float>descriptors;//存放結果
         hog->compute(trainImg, descriptors,Size(1,1), Size(0,0)); //Hog特徵計算
         cout<<"HOG dims: "<<descriptors.size()<<endl;
@@ -84,13 +83,13 @@ int main(int argc,char** argv)
     
     svm.train( data_mat, res_mat, NULL, NULL, param );//訓練數據
     //保存訓練好的分類器
-    svm.save( "/work/shintaogas/code/train_opencv/train_opencv/gas.xml" );
+    svm.save( argv[2] );
     
     //檢測樣本
     IplImage *test;
     char result[512];
     vector<string> img_tst_path;
-    ifstream img_tst( "/work/shintaogas/code/train_opencv/train_opencv/gas_test.txt" );  //加載需要預測的圖片集合，這個文本里存放的是圖片全路徑，不要標籤
+    ifstream img_tst( argv[3] );  //加載需要預測的圖片集合，這個文本里存放的是圖片全路徑，不要標籤
     while( img_tst )
     {
         if( getline( img_tst, buf ) )
@@ -100,7 +99,7 @@ int main(int argc,char** argv)
     }
     img_tst.close();
     
-    ofstream predict_txt( "/work/shintaogas/code/train_opencv/train_opencv/gas_predict.txt" );//把預測結果存儲在這個文本中
+    ofstream predict_txt( argv[4] );//把預測結果存儲在這個文本中
     for( string::size_type j = 0; j != img_tst_path.size(); j++ )//依次遍歷所有的待檢測圖片
     {
         test = cvLoadImage( img_tst_path[j].c_str(), 1);
@@ -109,10 +108,10 @@ int main(int argc,char** argv)
             cout<<" can not load the image: "<<img_tst_path[j].c_str()<<endl;
             continue;
         }
-        IplImage* trainTempImg=cvCreateImage(cvSize(28,28),8,3);
+        IplImage* trainTempImg=cvCreateImage(cvSize(48,48),8,3);
         cvZero(trainTempImg);
         cvResize(test,trainTempImg);
-        HOGDescriptor *hog=new HOGDescriptor(cvSize(28,28),cvSize(14,14),cvSize(7,7),cvSize(7,7),9);
+        HOGDescriptor *hog=new HOGDescriptor(cvSize(48,48),cvSize(24,24),cvSize(12,12),cvSize(6,6),9);
         vector<float>descriptors;//結果數組
         hog->compute(trainTempImg, descriptors,Size(1,1), Size(0,0));
         cout<<"HOG dims: "<<descriptors.size()<<endl;
