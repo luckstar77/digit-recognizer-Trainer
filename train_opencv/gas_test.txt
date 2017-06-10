@@ -1,4 +1,0 @@
-/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg57.bmp
-/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg59.bmp
-/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg61.bmp
-/work/shintaogas/code/train_opencv/train_opencv/train/trainTempImg62.bmp
