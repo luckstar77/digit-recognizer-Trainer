@@ -9,12 +9,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
+#include <dirent.h>
+#include <unistd.h>
 
 using namespace std;
 using namespace cv;
 
+int getdir(string dir, vector<string> &files);
+void SetTrainFile(char * file, char * testFile);
+
 int main(int argc,char** argv)
 {
+    SetTrainFile(argv[1], argv[3]);
     vector<string> img_path;//輸入文件名變量
     vector<int> img_catg;
     int nLine = 0;
@@ -81,9 +87,11 @@ int main(int argc,char** argv)
     criteria = cvTermCriteria( CV_TERMCRIT_EPS, 1000, FLT_EPSILON );
     param = CvSVMParams( CvSVM::C_SVC, CvSVM::RBF, 10.0, 0.09, 1.0, 10.0, 0.5, 1.0, NULL, criteria );
     
-    svm.train( data_mat, res_mat, NULL, NULL, param );//訓練數據
+    svm.train_auto( data_mat, res_mat, NULL, NULL, param, 10, svm.get_default_grid(CvSVM::C), svm.get_default_grid(CvSVM::GAMMA), svm.get_default_grid(CvSVM::P), CvParamGrid(1,1,0.0), CvParamGrid(1,1,0.0), CvParamGrid(1,1,0.0) );//訓練數據
     //保存訓練好的分類器
     svm.save( argv[2] );
+    CvSVMParams params_re = svm.get_params();
+    printf("\nParms: C = %f, P = %f,gamma = %f \n",params_re.C, params_re.p,params_re.gamma);
     
     //檢測樣本
     IplImage *test;
@@ -134,3 +142,72 @@ int main(int argc,char** argv)
     cvReleaseImage(&trainImg);
     return 0;
 }
+
+void SetTrainFile(char * file, char * testFile) {
+    char org_dir[1024];
+    getcwd(org_dir, 1024);
+    
+    fstream fp;
+    fp.open(file, ios::out);//開啟檔案
+    if(!fp){//如果開啟檔案失敗，fp為0；成功，fp為非0
+        cout<<"Fail to open file: "<<file<<endl;
+    }
+    
+    fstream fp1;
+    fp1.open(testFile, ios::out);//開啟檔案
+    if(!fp1){//如果開啟檔案失敗，fp為0；成功，fp為非0
+        cout<<"Fail to open testFile: "<<testFile<<endl;
+    }
+    
+    for(int j = 0; j < 10; j++) {
+        string s;
+        stringstream numPath(s);
+        numPath << j;
+        string dir = org_dir + string("/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
+        vector<string> files = vector<string>();
+        getdir(dir, files);
+        //輸出資料夾和檔案名稱於螢幕
+        for(int i=0; i<files.size(); i++){
+            if(files[i].find(".bmp") != -1) {
+                fp << dir << files[i] << endl;//寫入字串
+                fp << numPath.str() << endl;//寫入字串
+                fp1 << dir << files[i] << endl;//寫入字串
+            }
+        }
+    }
+    
+    for(int j = 15; j == 15; j++) {
+        string s;
+        stringstream numPath(s);
+        numPath << j;
+        string dir = org_dir + string("/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
+        vector<string> files = vector<string>();
+        getdir(dir, files);
+        //輸出資料夾和檔案名稱於螢幕
+        for(int i=0; i<files.size(); i++){
+            if(files[i].find(".bmp") != -1) {
+                fp << dir << files[i] << endl;//寫入字串
+                fp << numPath.str() << endl;//寫入字串
+                fp1 << dir << files[i] << endl;//寫入字串
+            }
+        }
+    }
+    
+    fp.close();//關閉檔案
+    fp1.close();//關閉檔案
+}
+
+int getdir(string dir, vector<string> &files){
+    DIR *dp;//創立資料夾指標
+    struct dirent *dirp;
+    if((dp = opendir(dir.c_str())) == NULL){
+        cout << "Error(" << errno << ") opening " << dir << endl;
+        return errno;
+    }
+    while((dirp = readdir(dp)) != NULL){//如果dirent指標非空
+        files.push_back(string(dirp->d_name));//將資料夾和檔案名放入vector
+    }
+    closedir(dp);//關閉資料夾指標
+    return 0;
+}
+
