@@ -1,8 +1,10 @@
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_1089164735.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_1258807339.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_1913539976.bmp  0
+/Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_2085031571.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_247614487.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_465197033.bmp  0
+/Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_487462051.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_84277416.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/10_939160469.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/11_1679824744.bmp  0
@@ -47,6 +49,7 @@
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/9_467806062.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/9_478852367.bmp  0
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/0/9_628109707.bmp  0
+/Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/1/10_124577852.bmp  1
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/1/10_1656962981.bmp  1
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/1/11_117537814.bmp  1
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/1/11_1403142430.bmp  1
@@ -119,6 +122,7 @@
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/2/4_245188867.bmp  2
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/2/9_1984299900.bmp  2
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/3/10_151279160.bmp  3
+/Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/3/10_2130886386.bmp  3
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/3/11_837658597.bmp  3
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/3/1_1017116769.bmp  3
 /Users/develop/Library/Developer/Xcode/DerivedData/train_opencv-gbwptfftygbnfieehpiwqwokwrel/Build/Products/Debug/train/3/2_1255197463.bmp  3
