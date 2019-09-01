@@ -163,7 +163,7 @@ void SetTrainFile(char * file, char * testFile) {
         string s;
         stringstream numPath(s);
         numPath << j;
-        string dir = string("/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
+        string dir = string("/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
         vector<string> files = vector<string>();
         getdir(dir, files);
         //輸出資料夾和檔案名稱於螢幕
@@ -180,7 +180,7 @@ void SetTrainFile(char * file, char * testFile) {
         string s;
         stringstream numPath(s);
         numPath << j;
-        string dir = string("/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
+        string dir = string("/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
         vector<string> files = vector<string>();
         getdir(dir, files);
         //輸出資料夾和檔案名稱於螢幕

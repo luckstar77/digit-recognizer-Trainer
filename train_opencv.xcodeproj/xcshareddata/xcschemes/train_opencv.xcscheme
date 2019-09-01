@@ -63,19 +63,19 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/gas_predict.txt"
+            argument = "/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/gas_predict.txt"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/gas.xml"
+            argument = "/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/gas.xml"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/gas_test.txt"
+            argument = "/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/gas_test.txt"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/gas_result.txt"
+            argument = "/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/gas_result.txt"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
