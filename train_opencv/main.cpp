@@ -163,7 +163,7 @@ void SetTrainFile(char * file, char * testFile) {
         string s;
         stringstream numPath(s);
         numPath << j;
-        string dir = org_dir + string("/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
+        string dir = string("/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
         vector<string> files = vector<string>();
         getdir(dir, files);
         //輸出資料夾和檔案名稱於螢幕
@@ -180,13 +180,13 @@ void SetTrainFile(char * file, char * testFile) {
         string s;
         stringstream numPath(s);
         numPath << j;
-        string dir = org_dir + string("/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
+        string dir = string("/Users/allenlai/Work/shintaogas_20190901/code/train_opencv/train_opencv/train/") + numPath.str() + "/";//資料夾路徑(絕對位址or相對位址)
         vector<string> files = vector<string>();
         getdir(dir, files);
         //輸出資料夾和檔案名稱於螢幕
         for(int i=0; i<files.size(); i++){
             if(files[i].find(".bmp") != -1) {
-                fp << dir << files[i] << endl;//寫入字串
+                fp << dir << files[i] << endl;//寫入字串 
                 fp << numPath.str() << endl;//寫入字串
                 fp1 << dir << files[i] << endl;//寫入字串
             }
@@ -210,4 +210,3 @@ int getdir(string dir, vector<string> &files){
     closedir(dp);//關閉資料夾指標
     return 0;
 }
-

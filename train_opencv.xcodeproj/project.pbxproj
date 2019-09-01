@@ -246,6 +246,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = BA252F8B1EE93D240030EB48;
@@ -360,7 +361,10 @@
 		BA252F9C1EE93D240030EB48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/usr/local/Cellar/opencv@2/2.4.13.7_4/include",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/libpng/1.6.29/lib,
@@ -382,6 +386,7 @@
 					/usr/local/Cellar/libtiff/4.0.6/lib,
 					/usr/local/Cellar/libzip/1.1/lib,
 					/usr/local/lib,
+					"/usr/local/Cellar/opencv@2/2.4.13.7_4/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -390,7 +395,10 @@
 		BA252F9D1EE93D240030EB48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/usr/local/Cellar/opencv@2/2.4.13.7_4/include",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/libpng/1.6.29/lib,
@@ -412,6 +420,7 @@
 					/usr/local/Cellar/libtiff/4.0.6/lib,
 					/usr/local/Cellar/libzip/1.1/lib,
 					/usr/local/lib,
+					"/usr/local/Cellar/opencv@2/2.4.13.7_4/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
