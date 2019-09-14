@@ -10,7 +10,6 @@
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/9_1577080036.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/18_27678.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/9_1577500211.bmp
-/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/18_27931 2.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/9_1982424333.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/9_467806062.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/9_1577970807.bmp
@@ -20,6 +19,7 @@
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/2_1635491723.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/8_137848528.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/10_1258807339.bmp
+/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/18_589983216.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/10_487462051.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/10_1089164735.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/0/9_478852367.bmp
@@ -155,9 +155,7 @@
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/1_888503463.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/4_471801011.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/9_693146605.bmp
-/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/18_20728.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/11_1516392618.bmp
-/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/18_31016.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/4/10_1101966165.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/5/4_520784036.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/5/11_1873594384.bmp
@@ -183,6 +181,7 @@
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/18_30852.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/4_1283906846.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/4_123400173.bmp
+/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/18_588908495.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/11_224944781.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/4_494223601.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/6/1_1018120816.bmp
@@ -240,6 +239,8 @@
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/8/18_32279.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/8/17_4453.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/8/4_858644976.bmp
+/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/8/18_915913113.bmp
+/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/8/18_1497246037.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/6_1713192775.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/2_511786319.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/17_26269.bmp
@@ -253,6 +254,7 @@
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/17_30004.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/6_326480170.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/6_2075811112.bmp
+/Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/18_1669391553.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/2_123681175.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/6_572036212.bmp
 /Users/allenlai/Work/shintaogas/code/train_opencv/train_opencv/train/9/4_1664988256.bmp
